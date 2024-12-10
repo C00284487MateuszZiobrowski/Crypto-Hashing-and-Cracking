@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     # Step 5: Attempt to crack the hash using the external dictionary
     print("\n=== Dictionary Attack ===")
-    dictionary_file_path = '/mnt/data/english.0'
+    dictionary_file_path = '/mnt/data/english.0' # Change this to the specific path where your english.0 is downloaded
     dictionary = load_dictionary(dictionary_file_path)
     cracked_password = dictionary_attack(sha256_hash, dictionary)
     if cracked_password:
